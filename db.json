@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "productName": "Sandals",
+      "category": "Shoes",
+      "freshness": "Brand New",
+      "price": 20,
+      "comment": "my red sandals",
+      "date": "2022-06-14T22:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Jeans",
+      "category": "Clothings",
+      "freshness": "Second Hand",
+      "price": 4,
+      "comment": "Very comfortable jeans",
+      "date": "2008-07-17T22:00:00.000Z",
+      "id": 2
+    }
+  ],
+  "patientList": [
+    {
+      "id": "345534",
+      "firstName": "ffef",
+      "lastName": "fererfre",
+      "gender": "female",
+      "date": "",
+      "comment": ""
+    }
+  ]
+}

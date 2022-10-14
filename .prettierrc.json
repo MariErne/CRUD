@@ -1,0 +1,16 @@
+{
+  "bracketSpacing": true,
+  "semi": true,
+  "singleQuote": true,
+  "endOfLine": "auto",
+  "trailingComma": "all",
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.component.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
+}
