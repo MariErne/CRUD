@@ -1,0 +1,53 @@
+<div class="container-base">
+  <div class="mat-elevation-z8">
+    <mat-card appearance="plus">
+      <div mat-dialog-content class="container">
+        <form [formGroup]="patientCreateEditForm">
+          <mat-form-field appearance="outline" class="item">
+            <mat-label>ID</mat-label>
+            <input formControlName="id" matInput placeholder="id" />
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="item">
+            <mat-label>First Name</mat-label>
+            <input formControlName="firstName" matInput placeholder="First Name" />
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="item">
+            <mat-label>Last Name</mat-label>
+            <input formControlName="lastName" matInput placeholder="Last Name" />
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="item">
+            <mat-label>Gender</mat-label>
+            <mat-select formControlName="gender" placeholder="Gender">
+              <mat-option value="male">Male</mat-option>
+              <mat-option value="female">Female</mat-option>
+              <mat-option value="unknown">Unknown</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div appearance="outline" class="break"></div>
+          <mat-form-field appearance="fill" class="item">
+            <mat-label>Date of Birth</mat-label>
+            <input formControlName="date" matInput [max]="maxDate" [matDatepicker]="picker" />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="item-wide">
+            <mat-label>Comment</mat-label>
+            <textarea formControlName="comment" matInput></textarea>
+          </mat-form-field>
+        </form>
+      </div>
+      <div matDialogActions [align]="'end'" style="padding: 0px 15px 15px 0px">
+        <button mat-raised-button color="warn" mat-dialog-close (click)="closeForm()">Close</button>
+        <button
+          style="margin-left: 10px"
+          mat-raised-button
+          color="primary"
+          (click)="onSubmit(patientCreateEditForm.value)"
+        >
+          {{ actionBtn }}
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>

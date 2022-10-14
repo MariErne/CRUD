@@ -1,0 +1,13 @@
+<div class="container" style="margin-top: 20px">
+  <app-create-patient #createPatient *ngIf="show"></app-create-patient>
+</div>
+<router-outlet name="patient"></router-outlet>
+<router-outlet name="product"></router-outlet>
+<router-outlet name="more"></router-outlet>
+<div class="container">
+  <div class="button-label">
+    <button mat-stroked-button color="primary">
+      <a routerLink="/more" routerLinkActive="active">Next page!</a>
+    </button>
+  </div>
+</div>

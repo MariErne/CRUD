@@ -1,0 +1,25 @@
+.container-base {
+  max-width: 1200px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+form {
+  width: 100%;
+}
+.mat-form-field {
+  width: 240px;
+  margin: 20px 10px;
+}
+.item {
+  flex-grow: 1;
+}
+.item-wide {
+  flex-grow: 3;
+  width: 440px;
+}

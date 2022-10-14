@@ -1,0 +1,19 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button class="icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>healing</mat-icon>
+  </button>
+  <span>CRUD aplication</span>
+  <span class="spacer"></span>
+  <button mat-raised-button color="primary" (click)="openDialog()" *ngIf="hasRoute('/more')">
+    Add Product
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    style="margin-left: 50px"
+    (click)="toggleForm()"
+    *ngIf="hasRoute('/more')"
+  >
+    {{ toggleButton }}
+  </button>
+</mat-toolbar>
